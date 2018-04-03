@@ -25,52 +25,93 @@ public class ImagePuzleActivity extends AppCompatActivity {
         init1();
     }
 
-    public void fun1(View v) {
-        ImageView i = (ImageView) findViewById(R.id.i6);
-        if (ab_location[8] == 1) {
-            ImageView i1 = (ImageView) findViewById(R.id.i9);
-            img_swap(9, 6, i, i1);
-            swap(8, 5);
-
-
+    public void click1(View v) {
+        ImageView i = (ImageView) findViewById(R.id.i1);
+        if (ab_location[1] == 1) {
+            ImageView i1 = (ImageView) findViewById(R.id.i2);
+            img_swap(2, 1, i, i1);
+            swap(1, 0);
 
         }
-        if (ab_location[4] == 1) {
-            ImageView i1 = (ImageView) findViewById(R.id.i5);
-            img_swap(5, 6, i, i1);
-            swap(4, 5);
+        if (ab_location[3] == 1) {
+            ImageView i1 = (ImageView) findViewById(R.id.i4);
+            img_swap(4, 1, i, i1);
+            swap(3, 0);
+
+        }
+
+        checkWin();
+    }
+
+    public void click2(View v) {
+        ImageView i = (ImageView) findViewById(R.id.i2);
+        if (ab_location[0] == 1) {
+            ImageView i1 = (ImageView) findViewById(R.id.i1);
+            img_swap(1, 2, i, i1);
+            swap(0, 1);
 
         }
         if (ab_location[2] == 1) {
             ImageView i1 = (ImageView) findViewById(R.id.i3);
-            img_swap(3, 6, i, i1);
-            swap(2, 5);
+            img_swap(3, 2, i, i1);
+            swap(2, 1);
+
+        }
+        if (ab_location[4] == 1) {
+            ImageView i1 = (ImageView) findViewById(R.id.i5);
+            img_swap(5, 2, i, i1);
+            swap(4, 1);
 
         }
 
-        win();
+        checkWin();
 
     }
 
-    public void fun2(View v) {
-        ImageView i = (ImageView) findViewById(R.id.i9);
+    public void click3(View v) {
+        ImageView i = (ImageView) findViewById(R.id.i3);
+        if (ab_location[1] == 1) {
+            ImageView i1 = (ImageView) findViewById(R.id.i2);
+            img_swap(2, 3, i, i1);
+            swap(1, 2);
+
+        }
         if (ab_location[5] == 1) {
             ImageView i1 = (ImageView) findViewById(R.id.i6);
-            img_swap(6, 9, i, i1);
-            swap(5, 8);
-
-        }
-        if (ab_location[7] == 1) {
-            ImageView i1 = (ImageView) findViewById(R.id.i8);
-            img_swap(8, 9, i, i1);
-            swap(7, 8);
+            img_swap(6, 3, i, i1);
+            swap(5, 2);
 
         }
 
-        win();
+        checkWin();
     }
 
-    public void fun5(View v) {
+    public void click4(View v) {
+        ImageView i = (ImageView) findViewById(R.id.i4);
+        if (ab_location[0] == 1) {
+            ImageView i1 = (ImageView) findViewById(R.id.i1);
+            img_swap(1, 4, i, i1);
+            swap(0, 3);
+
+        }
+        if (ab_location[4] == 1) {
+            ImageView i1 = (ImageView) findViewById(R.id.i5);
+            img_swap(5, 4, i, i1);
+            swap(4, 3);
+
+        }
+        if (ab_location[6] == 1) {
+            ImageView i1 = (ImageView) findViewById(R.id.i7);
+            img_swap(7, 4, i, i1);
+            swap(6, 3);
+
+        }
+
+
+        checkWin();
+    }
+
+    public void click5(View v) {
         ImageView i = (ImageView) findViewById(R.id.i5);
         if (ab_location[1] == 1) {
             ImageView i1 = (ImageView) findViewById(R.id.i2);
@@ -97,78 +138,55 @@ public class ImagePuzleActivity extends AppCompatActivity {
 
         }
 
-        win();
+        checkWin();
     }
 
-    public void fun22(View v) {
-        ImageView i = (ImageView) findViewById(R.id.i2);
-        if (ab_location[0] == 1) {
-            ImageView i1 = (ImageView) findViewById(R.id.i1);
-            img_swap(1, 2, i, i1);
-            swap(0, 1);
+    public void click6(View v) {
+        ImageView i = (ImageView) findViewById(R.id.i6);
+        if (ab_location[8] == 1) {
+            ImageView i1 = (ImageView) findViewById(R.id.i9);
+            img_swap(9, 6, i, i1);
+            swap(8, 5);
+
+
+
+        }
+        if (ab_location[4] == 1) {
+            ImageView i1 = (ImageView) findViewById(R.id.i5);
+            img_swap(5, 6, i, i1);
+            swap(4, 5);
 
         }
         if (ab_location[2] == 1) {
             ImageView i1 = (ImageView) findViewById(R.id.i3);
-            img_swap(3, 2, i, i1);
-            swap(2, 1);
-
-        }
-        if (ab_location[4] == 1) {
-            ImageView i1 = (ImageView) findViewById(R.id.i5);
-            img_swap(5, 2, i, i1);
-            swap(4, 1);
+            img_swap(3, 6, i, i1);
+            swap(2, 5);
 
         }
 
-        win();
+        checkWin();
 
     }
 
-    public void fun4(View v) {
-        ImageView i = (ImageView) findViewById(R.id.i4);
-        if (ab_location[0] == 1) {
-            ImageView i1 = (ImageView) findViewById(R.id.i1);
-            img_swap(1, 4, i, i1);
-            swap(0, 3);
-
-        }
-        if (ab_location[4] == 1) {
-            ImageView i1 = (ImageView) findViewById(R.id.i5);
-            img_swap(5, 4, i, i1);
-            swap(4, 3);
-
-        }
-        if (ab_location[6] == 1) {
-            ImageView i1 = (ImageView) findViewById(R.id.i7);
-            img_swap(7, 4, i, i1);
-            swap(6, 3);
-
-        }
-
-
-        win();
-    }
-
-    public void fun11(View v) {
-        ImageView i = (ImageView) findViewById(R.id.i1);
-        if (ab_location[1] == 1) {
-            ImageView i1 = (ImageView) findViewById(R.id.i2);
-            img_swap(2, 1, i, i1);
-            swap(1, 0);
-
-        }
+    public void click7(View v) {
+        ImageView i = (ImageView) findViewById(R.id.i7);
         if (ab_location[3] == 1) {
             ImageView i1 = (ImageView) findViewById(R.id.i4);
-            img_swap(4, 1, i, i1);
-            swap(3, 0);
+            img_swap(4, 7, i, i1);
+            swap(3, 6);
+
+        }
+        if (ab_location[7] == 1) {
+            ImageView i1 = (ImageView) findViewById(R.id.i8);
+            img_swap(8, 7, i, i1);
+            swap(7, 6);
 
         }
 
-        win();
+        checkWin();
     }
 
-    public void fun8(View v) {
+    public void click8(View v) {
         ImageView i = (ImageView) findViewById(R.id.i8);
         if (ab_location[6] == 1) {
             ImageView i1 = (ImageView) findViewById(R.id.i7);
@@ -189,48 +207,29 @@ public class ImagePuzleActivity extends AppCompatActivity {
 
         }
 
-        win();
+        checkWin();
 
     }
 
-
-    public void fun7(View v) {
-        ImageView i = (ImageView) findViewById(R.id.i7);
-        if (ab_location[3] == 1) {
-            ImageView i1 = (ImageView) findViewById(R.id.i4);
-            img_swap(4, 7, i, i1);
-            swap(3, 6);
+    public void click9(View v) {
+        ImageView i = (ImageView) findViewById(R.id.i9);
+        if (ab_location[5] == 1) {
+            ImageView i1 = (ImageView) findViewById(R.id.i6);
+            img_swap(6, 9, i, i1);
+            swap(5, 8);
 
         }
         if (ab_location[7] == 1) {
             ImageView i1 = (ImageView) findViewById(R.id.i8);
-            img_swap(8, 7, i, i1);
-            swap(7, 6);
+            img_swap(8, 9, i, i1);
+            swap(7, 8);
 
         }
 
-        win();
+        checkWin();
     }
 
-    public void fun3(View v) {
-        ImageView i = (ImageView) findViewById(R.id.i3);
-        if (ab_location[1] == 1) {
-            ImageView i1 = (ImageView) findViewById(R.id.i2);
-            img_swap(2, 3, i, i1);
-            swap(1, 2);
-
-        }
-        if (ab_location[5] == 1) {
-            ImageView i1 = (ImageView) findViewById(R.id.i6);
-            img_swap(6, 3, i, i1);
-            swap(5, 2);
-
-        }
-
-        win();
-    }
-    public void playagain(View v)
-    {
+    public void playagain(View v) {
         t2.setText("");
         if(flag==0) {
             init1();
@@ -241,8 +240,7 @@ public class ImagePuzleActivity extends AppCompatActivity {
         }
     }
 
-    void init1()
-    {
+    void init1() {
         ab_location[5] = 1;
         ab_location[7] = 0;
         ab_location[0] = 0;
@@ -287,8 +285,7 @@ public class ImagePuzleActivity extends AppCompatActivity {
 
     }
 
-    void init()
-    {
+    void init() {
         ab_location[5] = 1;
         ab_location[7] = 0;
         ab_location[0] = 0;
@@ -332,14 +329,13 @@ public class ImagePuzleActivity extends AppCompatActivity {
         flag=0;
     }
 
-
     void img_swap(int x, int y, ImageView i, ImageView i1) {
 
-        String mDrawableName = check1(x);
+        String mDrawableName = checkImageName(x);
         int resID = getResources().getIdentifier(mDrawableName, "drawable", getPackageName());
         i.setImageResource(resID);
 
-        mDrawableName = check1(y);
+        mDrawableName = checkImageName(y);
         resID = getResources().getIdentifier(mDrawableName, "drawable", getPackageName());
         i1.setImageResource(resID);
     }
@@ -354,21 +350,13 @@ public class ImagePuzleActivity extends AppCompatActivity {
         ab_location[y] = temp;
     }
 
-    public void win() {
+    public void checkWin() {
         if (start == 1 && im_location[0] == 1 && im_location[1] == 2 && im_location[2] == 3 && im_location[3] == 4 && im_location[4] == 5 && im_location[5] == 6 && im_location[6] == 7 && im_location[7] == 8 && im_location[8] == 9) {
-            t2.setText("win!!!!");
+            t2.setText("Win!!!!");
         }
-
-
-
     }
 
-
-
-
-
-
-    String check1(int index) {
+    String checkImageName(int index) {
         int x = im_location[index - 1];
 
         switch (x) {

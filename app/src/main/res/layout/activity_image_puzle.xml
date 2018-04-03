@@ -84,31 +84,34 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
 
-                            app:srcCompat="@drawable/f2"
-                            android:scaleType="fitXY"
+                        <ImageView
                             android:id="@+id/i1"
-                            android:onClick="fun11" />
-                        <ImageView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
+
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/f3"
+                            android:onClick="click1"
                             android:scaleType="fitXY"
+                            app:srcCompat="@drawable/f2" />
+
+                        <ImageView
                             android:id="@+id/i2"
-                            android:onClick="fun22" />
-                        <ImageView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/f6"
+                            android:onClick="click2"
                             android:scaleType="fitXY"
+                            app:srcCompat="@drawable/f3" />
+
+                        <ImageView
                             android:id="@+id/i3"
-                            android:onClick="fun3" />
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:onClick="click3"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/f6" />
 
 
                     </LinearLayout>
@@ -123,31 +126,34 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
 
-                            app:srcCompat="@drawable/f1"
-                            android:scaleType="fitXY"
+                        <ImageView
                             android:id="@+id/i4"
-                            android:onClick="fun4" />
-                        <ImageView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
+
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/f4"
+                            android:onClick="click4"
                             android:scaleType="fitXY"
+                            app:srcCompat="@drawable/f1" />
+
+                        <ImageView
                             android:id="@+id/i5"
-                            android:onClick="fun5" />
-                        <ImageView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/untitled3"
+                            android:onClick="click5"
                             android:scaleType="fitXY"
-                            android:onClick="fun1"
-                            android:id="@+id/i6" />
+                            app:srcCompat="@drawable/f4" />
+
+                        <ImageView
+                            android:id="@+id/i6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:onClick="click6"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/untitled3" />
 
 
                     </LinearLayout>
@@ -162,30 +168,33 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
+
                         <ImageView
+                            android:id="@+id/i7"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:onClick="fun7"
-                            app:srcCompat="@drawable/f7"
+                            android:onClick="click7"
                             android:scaleType="fitXY"
-                            android:id="@+id/i7" />
+                            app:srcCompat="@drawable/f7" />
+
                         <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/f5"
-                            android:scaleType="fitXY"
                             android:id="@+id/i8"
-                            android:onClick="fun8" />
-                        <ImageView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/f8"
-                            android:id="@+id/i9"
+                            android:onClick="click8"
                             android:scaleType="fitXY"
-                            android:onClick="fun2" />
+                            app:srcCompat="@drawable/f5" />
+
+                        <ImageView
+                            android:id="@+id/i9"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:onClick="click9"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/f8" />
 
 
                     </LinearLayout>
