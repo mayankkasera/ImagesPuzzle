@@ -1,4 +1,4 @@
-package com.example.mayank.imagespuzzle;
+package com.dynamic.mayank.imagespuzzle;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

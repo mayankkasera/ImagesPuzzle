@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ImagesPuzzle.iml" filepath="$PROJECT_DIR$/ImagesPuzzle.iml" />
+      <module fileurl="file://C:\Users\Mayank\Documents\ImagesPuzzle\ImagesPuzzle.iml" filepath="C:\Users\Mayank\Documents\ImagesPuzzle\ImagesPuzzle.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Mayank\Documents\ImagesPuzzle\app\app.iml" filepath="C:\Users\Mayank\Documents\ImagesPuzzle\app\app.iml" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.example.mayank.imagespuzzle;
+package com.dynamic.mayank.imagespuzzle;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -241,6 +241,9 @@ public class ImagePuzleActivity extends AppCompatActivity {
     }
 
     void init1() {
+
+        enable();
+
         ab_location[5] = 1;
         ab_location[7] = 0;
         ab_location[0] = 0;
@@ -286,6 +289,9 @@ public class ImagePuzleActivity extends AppCompatActivity {
     }
 
     void init() {
+
+        enable();
+
         ab_location[5] = 1;
         ab_location[7] = 0;
         ab_location[0] = 0;
@@ -353,6 +359,7 @@ public class ImagePuzleActivity extends AppCompatActivity {
     public void checkWin() {
         if (start == 1 && im_location[0] == 1 && im_location[1] == 2 && im_location[2] == 3 && im_location[3] == 4 && im_location[4] == 5 && im_location[5] == 6 && im_location[6] == 7 && im_location[7] == 8 && im_location[8] == 9) {
             t2.setText("Win!!!!");
+            disable();
         }
     }
 
@@ -382,6 +389,50 @@ public class ImagePuzleActivity extends AppCompatActivity {
         }
 
         return null;
+    }
+
+    void disable(){
+        ImageView i[] = new ImageView[9];
+        i[0] = (ImageView) findViewById(R.id.i1);
+        i[0].setEnabled(false);
+        i[1] = (ImageView) findViewById(R.id.i2);
+        i[1].setEnabled(false);
+        i[2] = (ImageView) findViewById(R.id.i3);
+        i[2].setEnabled(false);
+        i[3] = (ImageView) findViewById(R.id.i4);
+        i[3].setEnabled(false);
+        i[4] = (ImageView) findViewById(R.id.i5);
+        i[4].setEnabled(false);
+        i[5] = (ImageView) findViewById(R.id.i6);
+        i[5].setEnabled(false);
+        i[6] = (ImageView) findViewById(R.id.i7);
+        i[6].setEnabled(false);
+        i[7] = (ImageView) findViewById(R.id.i8);
+        i[7].setEnabled(false);
+        i[8] = (ImageView) findViewById(R.id.i9);
+        i[8].setEnabled(false);
+    }
+
+    void enable(){
+        ImageView i[] = new ImageView[9];
+        i[0] = (ImageView) findViewById(R.id.i1);
+        i[0].setEnabled(true);
+        i[1] = (ImageView) findViewById(R.id.i2);
+        i[1].setEnabled(true);
+        i[2] = (ImageView) findViewById(R.id.i3);
+        i[2].setEnabled(true);
+        i[3] = (ImageView) findViewById(R.id.i4);
+        i[3].setEnabled(true);
+        i[4] = (ImageView) findViewById(R.id.i5);
+        i[4].setEnabled(true);
+        i[5] = (ImageView) findViewById(R.id.i6);
+        i[5].setEnabled(true);
+        i[6] = (ImageView) findViewById(R.id.i7);
+        i[6].setEnabled(true);
+        i[7] = (ImageView) findViewById(R.id.i8);
+        i[7].setEnabled(true);
+        i[8] = (ImageView) findViewById(R.id.i9);
+        i[8].setEnabled(true);
     }
 
 }

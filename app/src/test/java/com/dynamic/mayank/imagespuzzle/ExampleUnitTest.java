@@ -1,4 +1,4 @@
-package com.example.mayank.imagespuzzle;
+package com.dynamic.mayank.imagespuzzle;
 
 import org.junit.Test;
 
